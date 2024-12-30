@@ -18,8 +18,12 @@ const Todos: React.FC = () => {
     }
     const SubmitText = (e: React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault();
-        setInputList(prevList => [...prevList, { id: new Date().getTime(), text: inputText }]);
-        setInputText("");
+        if (inputText) {
+            setInputList(prevList => [...prevList, { id: new Date().getTime(), text: inputText }]);
+            return setInputText("");
+        } else {
+            return alert("Please Enter your Input");
+        }
     }
 
     const DeleteInput = (id: number) => {
@@ -46,14 +50,19 @@ const Todos: React.FC = () => {
     }
     const UpdateText = () => {
         if (updateId !== undefined) {
-            setInputList(prevList =>
-                prevList.map(item =>
-                    item.id === updateId ? { ...item, text: inputText } : item
-                )
-            );
-            setIsUpdate(false);
-            setInputText("");
-            setUpdateId(undefined);
+            if (inputText) {
+
+                setInputList(prevList =>
+                    prevList.map(item =>
+                        item.id === updateId ? { ...item, text: inputText } : item
+                    )
+                );
+                setIsUpdate(false);
+                setInputText("");
+                return setUpdateId(undefined);
+            }else{
+                return alert("Enter Your Update Value")
+            }
         }
     }
     return (

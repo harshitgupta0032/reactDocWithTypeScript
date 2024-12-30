@@ -1,3 +1,7 @@
+# Updated PRojecturl - 
+project without typescript :: url - react-practice10.vercel.app
+Project with typeScript    :: url - react-doc-with-type-script.vercel.app 
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

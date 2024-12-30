@@ -5,7 +5,8 @@ const Home: React.FC = () => {
 
         <div className='bg-gray-400 min-h-screen h-fit w-full flex flex-col justify-center items-center gap-6'>
             <h1 className="text-black font-bold text-lg md:text-xl lg:text-2xl mb-5">React js - TypeScript</h1>
-            <HomeButton title="To do" routepath="/todo" />
+            <HomeButton title="To Do" routepath="/todo" />
+            <HomeButton title="Hooks" routepath="/hooks" />
             <HomeButton title="Empty Folder" routepath="/" />
         </div>
     )
