@@ -16,21 +16,3 @@ const SelectOptions: React.FC<OptionEvent> = ({ OptionValue, HandleOption }) => 
 }
 export default SelectOptions;
 
-
-
-
-
-
-
-
-
-
-
-
-
-// Todays Report :
-// Complete Todo List :- react-practice10.vercel.app
-// Learnd and Worked on Typescript and also created todo list using TypeScript :- react-doc-with-type-script.vercel.app
-// Worked on Hooks
-// https://github.com/harshitgupta0032/reactPractice
-// https://github.com/harshitgupta0032/reactDocWithTypeScript
