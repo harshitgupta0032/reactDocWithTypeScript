@@ -14,7 +14,7 @@ const UseEffectHooks: React.FC = () => {
     }
     return <>
         <div className="flex relative h-fit flex-col gap-4 items-center px-3 py-6 rounded-lg shadow-xl bg-white">
-            {/* <PointerMove /> */}
+
             <h1 className="text-black text-lg text-center font-bold mb-5"> <u>Use Effect</u></h1>
             <SelectOptions HandleOption={HandleOption} OptionValue={OptionValue} />
             <button onClick={ActionChat} className="px-4 py-1 border-2 border-gray-400 rounded-xl">
