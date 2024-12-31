@@ -1,4 +1,4 @@
-# Updated PRojecturl - 
+# Updated Project url - 
 project without typescript :: url - [react-practice10.vercel.app](https://react-practice10.vercel.app/)
 Project with typeScript    :: url - [react-doc-with-type-script.vercel.app](https://react-doc-with-type-script.vercel.app/)
 
