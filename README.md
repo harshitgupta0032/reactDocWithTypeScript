@@ -1,6 +1,6 @@
 # Updated PRojecturl - 
-project without typescript :: url - react-practice10.vercel.app
-Project with typeScript    :: url - react-doc-with-type-script.vercel.app 
+project without typescript :: url - [react-practice10.vercel.app](https://react-practice10.vercel.app/)
+Project with typeScript    :: url - [react-doc-with-type-script.vercel.app](https://react-doc-with-type-script.vercel.app/)
 
 # React + TypeScript + Vite
 
