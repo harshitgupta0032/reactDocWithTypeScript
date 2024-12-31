@@ -1,7 +1,6 @@
 import { useState } from "react";
 import SelectOptions from "./SelectOptions";
 import Chat from "./SearchChat/Chat";
-import PointerMove from "./PointerMove/PointerMove";
 
 const UseEffectHooks: React.FC = () => {
     const [OptionValue, setOptionValue] = useState<string>("genral");
