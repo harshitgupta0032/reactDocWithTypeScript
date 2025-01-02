@@ -1,8 +1,8 @@
 import { useReducer } from "react"
 import CreateReducer from "./CreateReducer";
 
-const CounterReduce = () => {
-    let initialState  = 0;
+const CounterReduce:React.FC = () => {
+    let initialState:number  = 0;
     const [count, dispatch] = useReducer(CreateReducer, initialState);
 
     return <>
