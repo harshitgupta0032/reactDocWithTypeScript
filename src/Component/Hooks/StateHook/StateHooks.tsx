@@ -16,7 +16,7 @@ const UseStateHooks = () => {
         setCount(0);
     }
     return <>
-        <div className="flex flex-col gap-4 items-center px-3 py-6 rounded-lg shadow-xl bg-white">
+        <div className="flex w-96 flex-col gap-4 items-center px-3 py-6 rounded-lg shadow-xl bg-white">
             <h1 className="text-black text-lg text-center font-bold mb-5"> <u>Use State</u></h1>
             <SearchInputs TextInput={TextInput} HandleInput={HandleInput} />
             {TextInput && <h1 className="text-black font-bold ">User Search : <span className="text-red-500">{TextInput}</span></h1>}

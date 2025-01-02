@@ -15,7 +15,7 @@ const Chat: React.FC<ChatConnection> = ({ roomId }) => {
 
     }, [textUrl, roomId]);
     return <>
-        <input type="text" value={textUrl} placeholder="Search..." onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTextUrl(e.target.value)} className="outline-gray-400 border-2 border-gray-400 rounded-xl text-black px-4 w-72 sm:w-80 md:w-96 py-2 md:py-3" />
+        <input type="text" value={textUrl} placeholder="Search..." onChange={(e: React.ChangeEvent<HTMLInputElement>) => setTextUrl(e.target.value)} className="outline-gray-400 border-2 border-gray-400 rounded-xl text-black px-4 w-72 sm:w-80 py-2 md:py-3" />
     </>
 }
 export default Chat;

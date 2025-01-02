@@ -1,4 +1,4 @@
-// import CustomHooks from "./CustomHooks/CustomHooks";
+import CustomHooks from "./CustomHooks/CustomHooks";
 import CounterContextHooks from "./ContextHook/CounterContextHooks";
 import ThemeContext from "./ContextHook/ThemeContext";
 import ContextHook from "./ContextHook/ContextHooks";
@@ -25,7 +25,7 @@ const Hooks: React.FC = () => {
             <RefHooks />
             <ReducerHooks />
 
-            {/* <CustomHooks /> */}
+            <CustomHooks />
         </div>
     </>
 }
