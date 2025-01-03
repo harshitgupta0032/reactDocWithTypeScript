@@ -1,7 +1,7 @@
 import DeleteUpdateButt from "./DeleteUpdateButt";
 import { UseTodo } from "./ContextProvider/ContextProvider";
 import { useState } from "react";
-
+import alarmImg from "./img/alarmimage.png"
 interface todoType {
     id: string;
     text: string,
@@ -113,7 +113,10 @@ const ListTodo: React.FC = () => {
                         </div>
                         {
                             IsUpdate[item.id] ? "" :
-                                <h1 className="px-10 text-gray-400">{item.id.slice(9, item.id.length - 6) + "" + item.id.slice(17, item.id.length)}</h1>
+                                <div className="px-8 flex gap-2 justify-start items-center">
+                                    <img src={alarmImg} alt="" className="h-4 w-4" />
+                                    <h1 className=" text-gray-400">{item.id.slice(9, item.id.length - 6) + "" + item.id.slice(17, item.id.length)}</h1>
+                                </div>
                         }
                     </div>
                 })
