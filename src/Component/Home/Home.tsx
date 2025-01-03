@@ -7,7 +7,8 @@ const Home: React.FC = () => {
             <h1 className="text-black font-bold text-lg md:text-xl lg:text-2xl mb-5">React js - TypeScript</h1>
             <HomeButton title="To Do" routepath="/todo" />
             <HomeButton title="Hooks" routepath="/hooks" />
-            <HomeButton title="Todo From Fimga" routepath="/todoFigma" />
+            <HomeButton title="Todo From Fimga For Mobile" routepath="/todoFigma" />
+            <HomeButton title="Redux" routepath="/" />
             <HomeButton title="Empty Folder" routepath="/" />
         </div>
     )
