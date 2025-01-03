@@ -22,7 +22,7 @@ const FormTodo: React.FC<FormTypeModle> = ({ HideModle }) => {
             complete: false
         };
 
-        setTodoList((Prev: NewtodoType[]) => [...Prev, newTodo]);
+        setTodoList((Prev: NewtodoType[]) => [newTodo, ...Prev]);
         setTextArea("")
         HideModle();
 
