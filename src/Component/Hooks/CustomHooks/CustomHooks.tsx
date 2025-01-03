@@ -1,4 +1,4 @@
-import useCounter from "./UseCounter";
+import useCounter from "./useCounter";
 
 const CustomHooks: React.FC = () => {
     const {count, Increment, Decrement} = useCounter();
