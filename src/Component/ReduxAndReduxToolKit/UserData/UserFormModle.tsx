@@ -12,7 +12,7 @@ interface UserType {
 }
 
 interface UserModleType {
-    HandleFormModle: () => void
+    HandleFormModle: () => void;
 }
 
 const UserFormModle: React.FC<UserModleType> = ({ HandleFormModle }) => {

@@ -14,7 +14,7 @@ const Routers: React.FC = () => {
             <Route path="/hooks" element={<Hooks/>}/>
             <Route path="/todoFigma" element={<TodoFigma/>}/>
             <Route path="/Redux-toolkit" element={<ReduxAndReduxToolkit/>}/>
-            <Route path="/Redux-toolkit/user/:id" element={<UserDetail/>}/>
+            <Route path="/Redux-toolkit/user/:userid" element={<UserDetail/>}/>
         </Routes>
     )
 }
