@@ -12,7 +12,7 @@ const TodoLayout: React.FC = () => {
 
     return (
         <>
-            <div className="h-screen w-96 relative bg-white">
+            <div className="min-h-screen w-96 relative bg-white">
                 <AddButton ShowModle={() => setModle(true)} />
                 <ListTodo />
                 {modle && <AddModle HideModle={HideModle} />}
