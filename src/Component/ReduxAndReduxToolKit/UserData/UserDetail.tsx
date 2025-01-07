@@ -17,7 +17,7 @@ interface todoState {
 }
 const UserDetail = () => {
     const [userData, setUserData] = useState<todostype>()
-    const todos = useSelector((state: todoState) => state.todo);
+    const todos = useSelector((state: { todo: todoState }) => state.todo.todo);
     const { userid } = useParams();
     useEffect(() => {
         const UserDetail = todos.find(todos => todos.id === userid);

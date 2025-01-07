@@ -17,14 +17,13 @@ interface todoState {
 }
 const UserList: React.FC = () => {
 
-    const todos = useSelector((state: todoState) => state.todo)
+    const todos = useSelector((state: { todo: todoState }) => state.todo.todo);
     const dispatch = useDispatch();
 
     const DeleteUser = (userid: string) => {
         dispatch(RemoveTodo(userid))
     }
     useEffect(()=>{
-
     },[todos])
     return <div className="flex flex-col justify-center items-center w-full h-fit">
         <div className="w-full px-5 lg:w-3/4 flex flex-col gap-8 sm:w-full">

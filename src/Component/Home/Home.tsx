@@ -9,7 +9,7 @@ const Home: React.FC = () => {
             <HomeButton title="Hooks" routepath="/hooks" />
             <HomeButton title="Todo From Fimga For Mobile" routepath="/todoFigma" />
             <HomeButton title="Redux" routepath="/Redux-toolkit" />
-            <HomeButton title="Fetch Api Using Redux" routepath="/" />
+            <HomeButton title="Fetch Api Using Redux" routepath="/reduxthunkApi" />
             <HomeButton title="Empty Folder" routepath="/" />
         </div>
     )
