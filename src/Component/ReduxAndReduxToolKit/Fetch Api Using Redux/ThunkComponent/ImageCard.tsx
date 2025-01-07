@@ -12,6 +12,7 @@ const ImageCard: React.FC<ProductsType> = ({ title, price, discount, image }) =>
         const discountAmount = (price * discount) / 100;
         return Math.floor(price - discountAmount);
     }
+    
     return <>
         <div className=" w-64  h-fit p-5 flex flex-col justify-center items-center gap-5">
             <img className=" cursor-pointer object-contain hover:scale-110 ease-in-out duration-300 transition-all  w-60 shadow-lg rounded-xl h-60" src={image} alt="product" />

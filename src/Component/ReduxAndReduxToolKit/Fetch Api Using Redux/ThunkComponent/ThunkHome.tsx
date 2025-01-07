@@ -3,8 +3,9 @@ import { useDispatch, useSelector } from "react-redux"
 import { getData } from "../../Redux/feature/ReduxThunk/ReduxThunkSlice";
 import { AppDispatch, RootState } from "../../Redux/app/store";
 import Loader from "../../Loader";
-import ImageCard from "./imageCard";
+
 import SideSlideBar from "./SideSlideBar";
+import ImageCard from "./ImageCard";
 
 interface ProductsType {
     id: number;
