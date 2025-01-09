@@ -38,8 +38,8 @@ const ImageCard: React.FC<ProductsType> = ({ title, price, discount, image, id, 
     }
 
     return <>
-        <div className=" w-64  h-fit p-4 flex flex-col justify-center items-center gap-5">
-            <div className="relative cursor-pointer hover:scale-110 ease-in-out duration-300 transition-all shadow-lg rounded-xl w-60  h-60">
+        <div className=" w-72  h-fit py-4 px-5 flex flex-col bg-white rounded-xl shadow-lg justify-center items-center gap-5">
+            <div className="relative cursor-pointer hover:scale-110 ease-in-out duration-300 transition-all w-60  h-60">
                 <img onClick={() => CheckProduct(id)} className="object-contain w-60 h-60" src={image} alt="product" />
                 {
                     discount ?
