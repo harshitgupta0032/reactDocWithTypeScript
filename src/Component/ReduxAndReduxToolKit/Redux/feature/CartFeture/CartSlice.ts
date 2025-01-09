@@ -32,7 +32,6 @@ const CartSlice = createSlice({
             const checkItemIndex = state.cartItem.findIndex((item) => item.id === action.payload.id);
             if (checkItemIndex >= 0) {
                 state.cartItem[checkItemIndex].cartItemQuantity += 1;
-                state.cartTotalQuantity += 1;
                 state.cartTotalAmount += action.payload.price;
             } else {
                 const addItem = { ...action.payload, cartItemQuantity: 1 };
@@ -48,7 +47,6 @@ const CartSlice = createSlice({
                 if (state.cartItem[checkItemIndex].cartItemQuantity > 1) {
 
                     state.cartItem[checkItemIndex].cartItemQuantity -= 1;
-                    state.cartTotalQuantity -= 1;
                     state.cartTotalAmount -= action.payload.price;
                 } else {
 
