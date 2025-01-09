@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux"
 import { getData } from "../../Redux/feature/ReduxThunk/ReduxThunkSlice";
 import { AppDispatch, RootState } from "../../Redux/app/store";
 import Loader from "../../Loader";
-
 import SideSlideBar from "./SideSlideBar";
 import ImageCard from "./ImageCard";
+import { useNavigate } from "react-router-dom";
 
 interface ProductsType {
     id: number;
@@ -22,9 +22,15 @@ interface ProductsType {
 const ThunkHome: React.FC = () => {
     const dispatch = useDispatch<AppDispatch>()
     const { data, isLoading, isError } = useSelector((state: RootState) => state.product);
-    const [FilteredData, setFilteredData] = useState<any>()
+    const [FilteredData, setFilteredData] = useState<any>();
     const [dataCategory, setDataCategory] = useState<Set<string>>(new Set());
-    const [categorieStatus, setCategoryStatus] = useState<string>("all")
+    const [categorieStatus, setCategoryStatus] = useState<string>("all");
+
+    const Navigate = useNavigate();
+
+    const CheckProduct = (productid: number) => {
+        return Navigate(`/reduxthunkApi/${productid}`)
+    }
 
     useEffect(() => {
         dispatch(getData())
@@ -61,7 +67,7 @@ const ThunkHome: React.FC = () => {
                         :
                         FilteredData.products.map((product: ProductsType) => {
                             return <div key={product.id} >
-                                <ImageCard title={product.title} price={product.price} discount={product.discount} image={product.image} />
+                                <ImageCard title={product.title} price={product.price} discount={product.discount} image={product.image} id={product.id} CheckProduct={CheckProduct} product={product}/>
                             </div>
                         })
                 }
